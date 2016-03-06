@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv='x-dns-prefetch-control' content='on'>
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv= "Cache-Control" content= "public" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta content="telephone=no" name="format-detection" />
+	<title>移动日历</title>
+	<script type="text/javascript">
+		(function () {
+			var dwidth = document.documentElement.offsetWidth, width, viewPort= 0.5, root='half-root';
+			width = 50+(dwidth-375)*100*.2/750;
+			width=Math.round(width>65?65:width);
+			var radina = Math.floor(window.devicePixelRatio||1);
+			var root='retina-root';root+=radina;
+			document.documentElement.setAttribute('class', root + (!!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)?' ios':''));
+			document.documentElement.style.fontSize = width+'px';
+		})();
+	</script>
+	<link type="text/css" rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<section class="content">
+	<div class="demo">
+		<div class="title">demo1（simple）</div>
+		<div class="rectangle border-handle"></div>
+	</div>
+	<div class="demo">
+		<div class="title">demo2（input）</div>
+		<div class="input-border border-handle">
+			<input class="input"/>
+		</div>
+		</br>
+		<div class="input-border border-handle">
+			<input class="input"/>
+		</div>
+
+	</div>
+	<div class="demo">
+		<div class="title">demo3(list)</div>
+		<ul class="f-menu-sort clearfix">
+			<li class="li1 border-handle">
+				<div class="f-menu-img"><img src="https://imgssl.suning.com/images/advertise/zy/tbwap/lqb.png"></div>
+				<p>零钱宝</p></li>
+			<li class="li2 border-handle">
+				<div class="f-menu-img"><img src="https://imgssl.suning.com/images/advertise/zy/tbwap/jj.png"></div>
+				<p>基金理财</p></li>
+			<li class="li3 border-handle">
+				<div class="f-menu-img"><img src="https://imgssl.suning.com/images/advertise/zy/tbwap/hdzq.png"></div>
+				<p>活动专区</p></li>
+			<li class="li4 border-handle">
+				<div class="f-menu-img"><img src="https://imgssl.suning.com/images/advertise/zy/tbwap/dqlc.png"></div>
+				<p>定期理财</p></li>
+			<li class="li5 border-handle">
+				<div class="f-menu-img"><img src="https://imgssl.suning.com/images/advertise/zy/tbwap/bxd.png"></div>
+				<p>变现贷</p></li>
+			<li class="li6 border-handle">
+				<div class="f-menu-img"><img src="https://imgssl.suning.com/images/advertise/zy/tbwap/gd.png"></div>
+				<p>更多</p></li>
+		</ul>
+	</div>
+	<div class="demo">
+		<div class="title">demo4（-webkit-box）</div>
+		<ul class="list">
+			<li class="border-handle">test1</li>
+			<li class="border-handle">test2</li>
+			<li class="border-handle">test3</li>
+			<li class="border-handle">test4</li>
+			<li class="border-handle">test5</li>
+			<li class="border-handle">test6</li>
+			<li class="border-handle">test4</li>
+			<li class="border-handle">test5</li>
+			<li class="border-handle">test6</li>
+		</ul>
+	</div>
+
+</section>
+</body>
+</html>
