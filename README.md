@@ -1,5 +1,5 @@
 # 为解决retina屏边框1px显示较粗问题，经过各种选择和尝试应用，终于找到一个非常好的解决方案
-效果见[index.html](http://htmlpreview.github.io/?https://github.com/maweimaweima/1px-border/blob/master/index.html)
+效果见[index.html](http://maweimaweima.github.io/1px-border)
 
     使用伪类生成的边框，可以实现边框的上下左右和圆角。再通过sass的mixin辅助，使用起来非常方便。
     最后是在兼容方面也都顺利解决。
